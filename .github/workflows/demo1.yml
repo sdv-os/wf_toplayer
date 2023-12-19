@@ -5,19 +5,30 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    
     - name: Deploy Docker image to Google Cloud Run
       run:  echo "BUILD DONE."
 
   notify:
     needs: build
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
       - name: Notify Slack and send eMail
         run: echo "NOTIFY DONE"
+  Test:
+    needs: notify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Function test and tool
+        run: echo "Run FT cases."
+  Deploy:
+    needs: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy the products.
+        run: echo "Deploy done."
+        
