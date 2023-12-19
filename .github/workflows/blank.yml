@@ -35,4 +35,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       # Use another work flow.
-      - uses: sdv-os/demo-gen-report@main
+      - uses: demo-gen-report/.github/workflows/python-app.yml
+          
