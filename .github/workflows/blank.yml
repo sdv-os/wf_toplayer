@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "Show current folder."
           pwd
-          ls
+          ls demo-gen-report/.github/workflows/
           
       - name: Call this flow.
         uses: ./demo-gen-report/.github/workflows/action.yml
