@@ -17,7 +17,7 @@ on:
 jobs:
   flow1:
   #Other flow.
-    uses: sdv-os/demo-gen-report/.github/workflows/python-app.yml@main
+    uses: sdv-os/demo-gen-report/.github/workflows/action.yml@main
     
   # This workflow contains a single job called "build"
   build:
