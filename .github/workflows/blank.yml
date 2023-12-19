@@ -30,8 +30,6 @@ jobs:
           pwd
           ls demo-gen-report/.github/workflows/
           
-      - name: Call this flow.
-        uses: sdv-os/demo-gen-report@main
 
   #flow2:
     #Other flow.
