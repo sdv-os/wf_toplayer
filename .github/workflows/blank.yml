@@ -31,7 +31,7 @@ jobs:
           ls demo-gen-report/.github/workflows/
           
       - name: Call this flow.
-        uses: ./demo-gen-report/.github/workflows/action.yml
+        uses: sdv-os/demo-gen-report@main
 
   #flow2:
     #Other flow.
