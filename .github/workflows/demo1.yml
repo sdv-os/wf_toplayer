@@ -1,6 +1,6 @@
 name: CI build and notify
 
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   build:
