@@ -35,5 +35,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       # Use another work flow.
-      - uses: demo-gen-report/.github/workflows/python-app.yml
+      - uses: ../demo-gen-report/.github/workflows/python-app.yml
           
