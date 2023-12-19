@@ -16,8 +16,15 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   flow1:
-  #Other flow.
-    uses: sdv-os/demo-gen-report/.github/workflows/action.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out my other private repo
+      - uses: actions/checkout@master
+        with:
+          repository: sdv-os/demo-gen-report
+          
+      #Other flow.
+      - uses: sdv-os/demo-gen-report/.github/workflows/action.yml@main
     
   # This workflow contains a single job called "build"
   build:
