@@ -31,7 +31,7 @@ jobs:
           ls
           
       - name: Call this flow.
-        uses: ./demo-gen-report/.github/workflows/action.yml@main
+        uses: ./demo-gen-report/.github/workflows/action.yml
 
   #flow2:
     #Other flow.
