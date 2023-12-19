@@ -21,7 +21,8 @@ jobs:
       - name: Check out my other private repo
         uses: actions/checkout@v3
         with:
-          repository: sdv-os/demo-gen-report@main
+          repository: sdv-os/demo-gen-report
+          
       - name: Call this flow.
         uses: ./demo-gen-report/.github/workflows/action.yml@main
 
