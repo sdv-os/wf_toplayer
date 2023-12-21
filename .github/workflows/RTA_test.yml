@@ -27,11 +27,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Upload S32G HEX bin file.
-        working-directory: C:\AricWang\cd\
         run: |
-          chdir
-          echo '# Build Result 🚀' >> $GITHUB_STEP_SUMMARY
-          echo '## Build Success 🚀' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          git show --name-only --format=tformat: >> $GITHUB_STEP_SUMMARY
           echo '### S32G399A HEX bin has been generated. 🚀' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
           echo Update load hex bin done!
           
