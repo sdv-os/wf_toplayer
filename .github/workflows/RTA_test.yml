@@ -35,6 +35,8 @@ jobs:
         working-directory: C:\AricWang\cd\
         run: |
           chdir
-          dir
+          echo '# Build Result 🚀' >> $GITHUB_STEP_SUMMARY
+          echo '## Build Success 🚀' >> $GITHUB_STEP_SUMMARY
+          echo '### S32G399A HEX bin has been generated. 🚀' >> $GITHUB_STEP_SUMMARY
           echo Update load hex bin done!
           
